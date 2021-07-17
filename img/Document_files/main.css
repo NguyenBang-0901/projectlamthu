@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-image: url("http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  background-attachment: fixed;
+  filter: brightness(90%);
+}
+.header__nav {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.12);
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  margin: 0 -15px -120px;
+}
+.header__nav-logo {
+  width: 227px;
+  height: 64px;
+  text-align: center;
+  padding: 0 15px;
+  position: relative;
+}
+.header__nav-logo-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+.header__nav-logo-img {
+  width: 160px;
+  height: 37px;
+}
+.header__nav-list {
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  display: inline-flex;
+  margin-left: 32px;
+  padding: 0 15px;
+  align-items: center;
+}
+.header__nav-list-item {
+  position: relative;
+}
+.header__nav-list-item:hover .subnav {
+  display: block;
+}
+.header__nav-item-link {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.header__nav-category {
+  float: right;
+}
+.header__nav-item-link--btn {
+  display: inline-block;
+  text-align: center;
+  background-color: #ba71da;
+  border-radius: 50px;
+  padding: 12px 15px 10px;
+  margin-left: 30px;
+}
+.header__nav-category {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 15px;
+}
+.header__nav-categoty-link {
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+.subnav {
+  display: none;
+  width: 150px;
+  position: absolute;
+  list-style: none;
+  left: 5px;
+  background-color: #fff;
+}
+
+.subnav-item {
+  position: relative;
+}
+
+.subnav-item-link {
+  width: 100%;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  line-height: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #666;
+  justify-content: space-between;
+  line-height: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.subnav-item-link span {
+  text-align: center;
+  font-size: 8px;
+  margin-left: 22px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  color: #fff;
+  padding: 0 2px;
+  background-color: #f76570;
+}
+.subnav-item-link i {
+  display: block;
+  float: right;
+}
+.subnav-item:hover .subnav-subnav {
+  display: block;
+}
+.subnav-subnav {
+  display: none;
+  width: 150px;
+  background-color: #fff;
+  position: absolute;
+  right: -170px;
+  top: 0px;
+  list-style: none;
+}
+.subnav-subnav::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0%;
+  background-color: transparent;
+  width: 30px;
+  height: 120px;
+}
+/* mid header */
+
+.header__mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__mid-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 230px;
+}
+.header__mid-list h1 {
+  color: #fff;
+  width: 100%;
+  font-size: 50px;
+}
+.header__mid-list h4 {
+  color: #fff;
+  text-align: center;
+  margin: 40px 0px;
+  font-size: 20px;
+  width: 395px;
+}
+.header-with-search {
+  display: flex;
+  width: 375px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.input-with-search {
+  height: 40px;
+  padding: 0 12px;
+  flex: 1;
+  outline: none;
+  border: none;
+}
+.nput-with-search-link {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.header-with-search-icon {
+  display: block;
+  line-height: 40px;
+}
