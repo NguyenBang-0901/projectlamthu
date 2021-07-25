@@ -536,7 +536,7 @@
 .View-package-header-table-second {
   position: relative;
   display: inline-block;
-  z-index: 1;
+  z-index: 0;
 }
 
 .View-package-header-table-second::after {
@@ -549,6 +549,7 @@
   background-color: #f76570;
   z-index: -1;
 }
+
 .View-package-item-link {
   padding: 15px 35px;
   letter-spacing: 2px;
